@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "e7380443-9546-48d5-94fc-8f697fabf224",
+		"name": "api-responser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17284909"
+	},
+	"item": [
+		{
+			"name": "posts.index",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/posts?_sort=title&_order=asc&filters[0][field]=user_id&filters[0][value]=01h87w1881ae1qtr1hme7qw1hm",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "_sort",
+							"value": "title"
+						},
+						{
+							"key": "_order",
+							"value": "asc"
+						},
+						{
+							"key": "filters[0][field]",
+							"value": "user_id"
+						},
+						{
+							"key": "filters[0][value]",
+							"value": "01h87w1881ae1qtr1hme7qw1hm"
+						},
+						{
+							"key": "filters[1][field]",
+							"value": "id",
+							"disabled": true
+						},
+						{
+							"key": "filters[1][value]",
+							"value": "01h87w2tkydztys5pve1883tek",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "per_page",
+							"value": "15",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
