@@ -2,11 +2,10 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
-
-// use Multividas\ApiResponser\Facades\ApiResponser;
-// use Multividas\QueryFilters\Facades\QueryFilters;
-// use Multividas\ApiResponser\Providers\ApiResponserServiceProvider;
-// use Multividas\QueryFilters\Providers\QueryFiltersServiceProvider;
+use Multividas\ApiResponser\Providers\ApiResponserServiceProvider;
+use Multividas\QueryFilters\Providers\QueryFiltersServiceProvider;
+use Multividas\ApiResponser\Facades\ApiResponser as ApiResponserFacade;
+use Multividas\QueryFilters\Facades\QueryFilters as QueryFiltersFacade;
 
 return [
 
@@ -173,8 +172,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        // ApiResponserServiceProvider::class,
-        // QueryFiltersServiceProvider::class,
+        ApiResponserServiceProvider::class,
+        QueryFiltersServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -189,8 +188,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // 'ApiResponser' => ApiResponser::class,
-        // 'QueryFilters' => QueryFilters::class,
+        'ApiResponser' => ApiResponserFacade::class,
+        'QueryFilters' => QueryFiltersFacade::class,
     ])->toArray(),
 
 ];

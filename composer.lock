@@ -6083,20 +6083,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/multividas/api-responser.git",
-                "reference": "432788e30c1d90a5bb81260dca9f021e7be9c81e"
+                "reference": "7e2ae31477be87c6267b4449e031f5311bcc3343"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/multividas/api-responser/zipball/432788e30c1d90a5bb81260dca9f021e7be9c81e",
-                "reference": "432788e30c1d90a5bb81260dca9f021e7be9c81e",
+                "url": "https://api.github.com/repos/multividas/api-responser/zipball/7e2ae31477be87c6267b4449e031f5311bcc3343",
+                "reference": "7e2ae31477be87c6267b4449e031f5311bcc3343",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "php": "^8.2"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "dev-master",
                 "multividas/query-filters": "dev-main",
-                "orchestra/testbench": "dev-develop",
+                "orchestra/testbench": "8.x-dev",
                 "phpunit/phpunit": "9.6.x-dev",
                 "squizlabs/php_codesniffer": "4.0.x-dev"
             },
@@ -6123,19 +6124,20 @@
             ],
             "authors": [
                 {
-                    "name": "multividas inc",
-                    "email": "contact@multividas.com"
+                    "name": "Multividas",
+                    "email": "multividasdotcom@gmail.com"
                 }
             ],
-            "description": "composer package to facilitates the process of structuring and generating API responses ",
+            "description": "Composer package to facilitates the process of structuring and generating API responses",
             "keywords": [
-                "api-responser"
+                "api-responser",
+                "multividas"
             ],
             "support": {
                 "issues": "https://github.com/multividas/api-responser/issues",
-                "source": "https://github.com/multividas/api-responser/tree/main"
+                "source": "https://github.com/multividas/api-responser"
             },
-            "time": "2023-11-09T19:15:21+00:00"
+            "time": "2024-09-13T16:49:35+00:00"
         },
         {
             "name": "multividas/query-filters",
@@ -6143,19 +6145,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/multividas/query-filters.git",
-                "reference": "23634d6c184da089f2a585ee271d83cd2ab2800d"
+                "reference": "b79d7f4a367e548f19e9884c37569408d153fce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/multividas/query-filters/zipball/23634d6c184da089f2a585ee271d83cd2ab2800d",
-                "reference": "23634d6c184da089f2a585ee271d83cd2ab2800d",
+                "url": "https://api.github.com/repos/multividas/query-filters/zipball/b79d7f4a367e548f19e9884c37569408d153fce9",
+                "reference": "b79d7f4a367e548f19e9884c37569408d153fce9",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "php": "^8.2"
             },
             "require-dev": {
-                "orchestra/testbench": "dev-develop",
+                "friendsofphp/php-cs-fixer": "dev-master",
+                "orchestra/testbench": "8.x-dev",
                 "phpunit/phpunit": "9.6.x-dev",
                 "squizlabs/php_codesniffer": "4.0.x-dev"
             },
@@ -6182,19 +6185,19 @@
             ],
             "authors": [
                 {
-                    "name": "multividas inc",
-                    "email": "contact@multividas.com"
+                    "name": "Multividas",
+                    "email": "multividasdotcom@gmail.com"
                 }
             ],
-            "description": "composer package to simplify the process of filtering and sorting queries.",
+            "description": "Composer package to simplify the process of filtering and sorting queries",
             "keywords": [
                 "query-filters"
             ],
             "support": {
                 "issues": "https://github.com/multividas/query-filters/issues",
-                "source": "https://github.com/multividas/query-filters/tree/main"
+                "source": "https://github.com/multividas/query-filters"
             },
-            "time": "2023-11-09T18:56:29+00:00"
+            "time": "2024-07-01T21:28:27+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -8271,7 +8274,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "multividas/api-responser": 20
+        "multividas/api-responser": 20,
+        "multividas/query-filters": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
@@ -8279,5 +8283,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
